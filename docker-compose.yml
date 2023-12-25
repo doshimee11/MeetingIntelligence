@@ -1,0 +1,13 @@
+version: '3'
+services:
+  meeting_app:
+    image: meeting_app:v1
+    environment:
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}
+      - AWS_LOGS_ACCESS_KEY=${AWS_LOGS_ACCESS_KEY}
+      - AWS_LOGS_SECRET_KEY=${AWS_LOGS_SECRET_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - USER_BUCKET_NAME=${USER_BUCKET_NAME}
+    ports:
+      - "8995:8995"
