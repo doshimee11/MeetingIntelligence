@@ -21,11 +21,9 @@ To run this project, you will need:
 - Clone the repository.
 - Install the required packages by running pip install -r requirements.txt.
 - Create a VM instance in Amazon Web Service.
-- Create a new directory named "app" (Copy the contents of the Airflow folder from this repository into the "app" directory).
 - Build Docker images for the Streamlit app and push them to Docker Hub.
 - Set up the Streamlit app in the VM instance:
-- Create a new directory called 'feapps3' for the Streamlit app (Copy the docker-compose.yml file from the 'feapps3' folder in this repository into the new directory).
-- Ensure the .env file containing the AWS and OpenAI keys is present in both the "app" directory created for Airflow and the directory created for the Streamlit app.
+- Ensure the .env file containing the AWS and OpenAI keys is present in the directory created for the Streamlit app.
 - Pass the AWS and OpenAI keys as environment variables in the Docker Compose file.
 - Run the Docker Compose file to start the Streamlit app.
 
